@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Kashan Munawar (Kashan Gill) | Web Developer &amp; AI Solutions Engineer</title>
+  <meta name="description" content="Official portfolio of Muhammad Kashan Munawar (also known as Kashan Gill / Kashan) - BS Robotics Student, Frontend Developer, and AI Solutions Engineer in Lahore/Khanewal." />
+  <meta name="keywords" content="Muhammad Kashan Munawar, Kashan Gill, Kashan, Kashan Gill Web Developer, Kashan Robotics, Kashan Gill Portfolio, Web Developer Lahore" />
+  <meta name="author" content="Muhammad Kashan Munawar (Kashan Gill)" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://your-domain.netlify.app/" />
+
+  <!-- Open Graph / Social SEO -->
+  <meta property="og:title" content="Muhammad Kashan Munawar (Kashan Gill) | Web Developer &amp; AI Solutions Engineer" />
+  <meta property="og:description" content="Official portfolio of Muhammad Kashan Munawar (also known as Kashan Gill / Kashan) - BS Robotics Student, Frontend Developer, and AI Solutions Engineer in Lahore/Khanewal." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-domain.netlify.app/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Muhammad Kashan Munawar (Kashan Gill) | Web Developer &amp; AI Solutions Engineer" />
+  <meta name="twitter:description" content="Official portfolio of Muhammad Kashan Munawar (also known as Kashan Gill / Kashan) - BS Robotics Student, Frontend Developer, and AI Solutions Engineer in Lahore/Khanewal." />
+
+  <!-- Structured Data / JSON-LD Schema for Google Knowledge Panel & Search Indexing -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Muhammad Kashan Munawar",
+    "alternateName": ["Kashan Gill", "Kashan", "Muhammad Kashan"],
+    "jobTitle": "Web Developer & AI Solutions Engineer",
+    "alumniOf": "Superior University",
+    "knowsAbout": ["Web Development", "AI Solutions", "Robotics", "E-Commerce"],
+    "url": "https://your-domain.netlify.app/",
+    "sameAs": [
+      "https://www.linkedin.com/in/muhammadkashan972/",
+      "https://github.com/muhammadkashan972"
+    ]
+  }
+  </script>
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              600: '#4f46e5',
+              700: '#4338ca',
+              900: '#312e81',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-slate-900 font-sans antialiased selection:bg-indigo-100 selection:text-indigo-900">
+
+  <!-- ================= HEADER / NAVBAR ================= -->
+  <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md border-b border-gray-200/80 shadow-xs">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        
+        <!-- Logo / Name -->
+        <a href="#home" class="flex items-center gap-3 text-slate-900 font-bold tracking-tight hover:opacity-90 transition-opacity">
+          <div class="w-10 h-10 rounded-xl bg-slate-900 text-white flex items-center justify-center font-bold text-base shadow-xs">
+            KM
+          </div>
+          <div class="flex flex-col">
+            <span class="text-sm sm:text-base font-semibold text-slate-900 leading-tight">Muhammad Kashan Munawar</span>
+            <span class="text-xs text-slate-500 font-normal flex items-center gap-1.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              Web Developer &amp; AI Solutions Engineer
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-1" aria-label="Main Navigation">
+          <a href="#home" class="nav-link px-3.5 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-gray-100/70 rounded-lg transition-colors">Home</a>
+          <a href="#about" class="nav-link px-3.5 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-gray-100/70 rounded-lg transition-colors">About</a>
+          <a href="#skills" class="nav-link px-3.5 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-gray-100/70 rounded-lg transition-colors">Skills</a>
+          <a href="#projects" class="nav-link px-3.5 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-gray-100/70 rounded-lg transition-colors">Projects</a>
+          <a href="#cv" class="nav-link px-3.5 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-gray-100/70 rounded-lg transition-colors">CV / Resume</a>
+          <a href="#contact" class="nav-link px-3.5 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-gray-100/70 rounded-lg transition-colors">Contact</a>
+        </nav>
+
+        <!-- Header Action Buttons: View CV & Download CV -->
+        <div class="hidden md:flex items-center gap-2">
+          <a href="files/muhammad_kashan_munawar_CV.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold text-slate-800 bg-gray-100 hover:bg-gray-200 rounded-lg shadow-xs transition-all active:scale-95">
+            <svg class="w-3.5 h-3.5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+            <span>View CV</span>
+            <svg class="w-3 h-3 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"></path></svg>
+          </a>
+          <a href="files/muhammad_kashan_munawar_CV.pdf" download="muhammad_kashan_munawar_CV.pdf" class="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold text-white bg-slate-900 hover:bg-indigo-600 rounded-lg shadow-xs transition-all active:scale-95">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+            <span>Download CV</span>
+          </a>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <button id="mobile-toggle-btn" class="md:hidden p-2 rounded-lg text-slate-700 hover:bg-gray-100 transition-colors" aria-label="Toggle menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-200 px-4 pt-2 pb-6 space-y-2 shadow-lg">
+      <a href="#home" class="mobile-nav-item block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-indigo-50 hover:text-indigo-600">Home</a>
+      <a href="#about" class="mobile-nav-item block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-indigo-50 hover:text-indigo-600">About</a>
+      <a href="#skills" class="mobile-nav-item block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-indigo-50 hover:text-indigo-600">Skills</a>
+      <a href="#projects" class="mobile-nav-item block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-indigo-50 hover:text-indigo-600">Projects</a>
+      <a href="#cv" class="mobile-nav-item block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-indigo-50 hover:text-indigo-600">CV / Resume</a>
+      <a href="#contact" class="mobile-nav-item block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-indigo-50 hover:text-indigo-600">Contact</a>
+      <div class="pt-3 border-t border-gray-100 flex gap-2">
+        <a href="files/muhammad_kashan_munawar_CV.pdf" target="_blank" rel="noopener noreferrer" class="flex-1 flex items-center justify-center gap-1 px-3 py-2.5 text-xs font-semibold text-slate-700 bg-gray-100 hover:bg-gray-200 rounded-lg shadow-xs">
+          <span>View CV</span>
+        </a>
+        <a href="files/muhammad_kashan_munawar_CV.pdf" download="muhammad_kashan_munawar_CV.pdf" class="flex-1 flex items-center justify-center gap-1 px-3 py-2.5 text-xs font-semibold text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg shadow-xs">
+          <span>Download CV</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section id="home" class="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+        
+        <!-- Profile Picture - Prominent Slot -->
+        <div class="lg:col-span-5 flex justify-center lg:justify-start order-1 lg:order-2">
+          <div class="relative group">
+            <div class="absolute -inset-2 bg-gradient-to-tr from-indigo-100 via-slate-100 to-blue-100 rounded-3xl opacity-80 blur-xs group-hover:opacity-100 transition-opacity"></div>
+            
+            <div class="relative w-64 h-64 sm:w-80 sm:h-80 md:w-88 md:h-88 rounded-2xl overflow-hidden bg-slate-100 border-2 border-white shadow-xl shadow-slate-200/60">
+              <img
+                src="/images/profile.png"
+                alt="Muhammad Kashan Munawar (Kashan Gill)"
+                class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+              />
+              
+              <!-- Floating Status Pill -->
+              <div class="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-xl border border-gray-200/80 shadow-sm flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="relative flex h-2.5 w-2.5">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                  </span>
+                  <span class="text-xs font-semibold text-slate-800">Open to Projects &amp; Roles</span>
+                </div>
+                <span class="text-[11px] font-medium text-slate-500 bg-gray-100 px-2 py-0.5 rounded-md">2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left order-2 lg:order-1">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-100/90 border border-slate-200 text-slate-700 text-xs font-medium">
+            <svg class="w-3.5 h-3.5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            <span>Superior University, Lahore &bull; Hometown Khanewal, Pakistan</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+            Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-blue-600 to-indigo-800">Muhammad Kashan Munawar</span> <span class="text-2xl sm:text-3xl lg:text-4xl font-normal text-slate-500">(Kashan Gill)</span>
+          </h1>
+
+          <p class="text-xl sm:text-2xl font-bold text-slate-900 leading-snug tracking-tight">
+            Web Developer &amp; AI Solutions Engineer
+          </p>
+          <p class="text-sm font-semibold text-indigo-600 -mt-2">
+            BS Robotics Student &bull; Superior University, Lahore
+          </p>
+
+          <p class="text-base text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            Passionate Web Developer &amp; AI Solutions Engineer pursuing BS Robotics at Superior University, Lahore. Combining hardware engineering logic with modern AI-driven web development to create high-converting e-commerce stores, responsive landing pages, and web automation solutions.
+          </p>
+
+          <!-- Social Links Icons -->
+          <div class="flex items-center justify-center lg:justify-start gap-3 pt-1">
+            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-1">Connect:</span>
+            <a href="https://www.linkedin.com/in/muhammadkashan972/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-10 h-10 rounded-xl bg-white hover:bg-indigo-50 border border-gray-200 hover:border-indigo-300 text-slate-700 hover:text-indigo-600 flex items-center justify-center shadow-xs transition-all">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            </a>
+            <a href="https://github.com/muhammadkashan972" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="w-10 h-10 rounded-xl bg-white hover:bg-slate-100 border border-gray-200 hover:border-slate-400 text-slate-700 hover:text-slate-900 flex items-center justify-center shadow-xs transition-all">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+            </a>
+            <a href="https://wa.me/923004812972" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-10 h-10 rounded-xl bg-white hover:bg-emerald-50 border border-gray-200 hover:border-emerald-300 text-slate-700 hover:text-emerald-600 flex items-center justify-center shadow-xs transition-all">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24M8.53 7.33c-.16 0-.43.06-.66.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.13.17 1.73 2.64 4.2 3.7.59.25 1.05.4 1.41.51.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29s-1.47-.73-1.7-.81c-.23-.08-.4-.13-.57.12-.17.26-.65.81-.8 1-.15.15-.3.17-.55.05s-1.06-.39-2.02-1.24c-.75-.67-1.25-1.5-1.4-1.75-.15-.25-.02-.38.11-.5.11-.11.25-.29.38-.44.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.44s-.57-1.37-.78-1.88c-.2-.49-.41-.43-.57-.43z"/></svg>
+            </a>
+            <a href="mailto:kashangillmuhammad@gmail.com" aria-label="Email" class="w-10 h-10 rounded-xl bg-white hover:bg-blue-50 border border-gray-200 hover:border-blue-300 text-slate-700 hover:text-blue-600 flex items-center justify-center shadow-xs transition-all">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            </a>
+          </div>
+
+          <!-- Action Buttons: View Projects, View CV, Download CV, Contact Me -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-2">
+            <a href="#projects" class="inline-flex items-center justify-center gap-2 px-5 py-3 text-sm font-semibold text-white bg-slate-900 hover:bg-indigo-600 rounded-xl shadow-sm transition-all hover:-translate-y-0.5">
+              <span>View Projects</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+
+            <!-- View CV button (opens in new tab) -->
+            <a href="files/muhammad_kashan_munawar_CV.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-5 py-3 text-sm font-semibold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200/80 rounded-xl shadow-xs transition-all hover:-translate-y-0.5">
+              <svg class="w-4 h-4 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+              <span>View CV</span>
+              <svg class="w-3.5 h-3.5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            </a>
+
+            <!-- Download CV button (with download attribute) -->
+            <a href="files/muhammad_kashan_munawar_CV.pdf" download="muhammad_kashan_munawar_CV.pdf" class="inline-flex items-center justify-center gap-2 px-5 py-3 text-sm font-semibold text-slate-800 bg-white hover:bg-gray-50 border border-gray-300 rounded-xl shadow-xs transition-all hover:-translate-y-0.5">
+              <svg class="w-4 h-4 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+              <span>Download CV</span>
+            </a>
+
+            <a href="#contact" class="inline-flex items-center justify-center gap-2 px-4 py-3 text-sm font-semibold text-slate-600 hover:text-slate-900 transition-colors">
+              <span>Contact Me</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ME SECTION ================= -->
+  <section id="about" class="py-20 bg-white border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mx-auto text-center mb-14">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-indigo-50 text-indigo-700 text-xs font-semibold tracking-wide uppercase mb-3">
+          <span>Profile &amp; Background</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">About Me</h2>
+        <p class="mt-3 text-slate-600 text-base sm:text-lg">
+          Combining hardware engineering logic with modern AI-driven frontend web development.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+        <div class="lg:col-span-7 p-6 sm:p-8 rounded-2xl bg-gray-50/80 border border-gray-200/80 space-y-4 text-slate-600 leading-relaxed">
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Engineering Rigor &amp; Web Craftsmanship</h3>
+          <p>
+            I am <strong class="text-slate-900">Muhammad Kashan Munawar</strong>, a Web Developer &amp; AI Solutions Engineer pursuing BS Robotics at <strong class="text-slate-900">Superior University, Lahore</strong> (original hometown Khanewal, Pakistan). My academic training in robotics equips me with structural problem decomposition, algorithmic precision, and systems thinking.
+          </p>
+          <p>
+            I channel these engineering fundamentals into modern frontend web development. By harnessing rapid AI-assisted workflows, I create highly responsive business websites, conversion-focused e-commerce storefronts (Shopify &amp; WordPress), and clean automation solutions.
+          </p>
+          <div class="pt-4 border-t border-gray-200 grid grid-cols-2 gap-3 text-xs font-semibold text-slate-700">
+            <div>&bull; Superior University, Lahore</div>
+            <div>&bull; Hometown: Khanewal</div>
+            <div>&bull; E-commerce: Shopify &amp; WordPress</div>
+            <div>&bull; Deployments: Vercel &amp; Netlify</div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 space-y-4">
+          <div class="p-5 rounded-xl bg-white border border-gray-200/80 shadow-xs">
+            <h4 class="text-base font-bold text-slate-900">Robotics &amp; Hardware Logic</h4>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1">Structured, clean, and maintainable software architecture derived from engineering disciplines.</p>
+          </div>
+          <div class="p-5 rounded-xl bg-white border border-gray-200/80 shadow-xs">
+            <h4 class="text-base font-bold text-slate-900">AI-Assisted Rapid Development</h4>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1">Modern AI tool integrations ensuring rapid delivery, thorough quality, and clean responsive UI.</p>
+          </div>
+          <div class="p-5 rounded-xl bg-white border border-gray-200/80 shadow-xs">
+            <h4 class="text-base font-bold text-slate-900">E-Commerce &amp; Storefronts</h4>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1">High-converting online shops, product setup, and digital marketing funnels across FB &amp; TikTok.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS & CERTIFICATIONS ================= -->
+  <section id="skills" class="py-20 bg-gray-50/70 border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mx-auto text-center mb-14">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Skills &amp; Certifications</h2>
+        <p class="mt-3 text-slate-600 text-base sm:text-lg">Technical competencies, e-commerce expertise, and verified generative AI certifications.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+        <!-- Web Dev & AI -->
+        <div class="p-6 sm:p-7 rounded-2xl bg-white border border-indigo-100 shadow-xs">
+          <h3 class="text-lg font-bold text-slate-900">Web Development &amp; AI</h3>
+          <p class="text-xs text-slate-500 mb-4">Modern frontend &amp; deployment infrastructure</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-indigo-50 text-indigo-900 border border-indigo-200">AI-Powered Frontend Web Development</span>
+            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-indigo-50 text-indigo-900 border border-indigo-200">HTML5</span>
+            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-indigo-50 text-indigo-900 border border-indigo-200">CSS3</span>
+            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-indigo-50 text-indigo-900 border border-indigo-200">JavaScript</span>
+            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-indigo-50 text-indigo-900 border border-indigo-200">Vercel &amp; Netlify Deployment</span>
+            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-indigo-50 text-indigo-900 border border-indigo-200">Google Search Indexing</span>
+          </div>
+        </div>
+
+        <!-- E-Commerce & CMS -->
+        <div class="p-6 sm:p-7 rounded-2xl bg-white border border-emerald-100 shadow-xs">
+          <h3 class="text-lg font-bold text-slate-900">E-Commerce &amp; CMS</h3>
+          <p class="text-xs text-slate-500 mb-4">Commercial store design &amp; maintenance</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-50 text-emerald-900 border border-emerald-200">Shopify Store Creation</span>
+            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-50 text-emerald-900 border border-emerald-200">Shopify Customization</span>
+            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-50 text-emerald-900 border border-emerald-200">WordPress Website Development</span>
+            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-50 text-emerald-900 border border-emerald-200">Product Catalogs &amp; Layouts</span>
+          </div>
+        </div>
+
+        <!-- Digital Marketing -->
+        <div class="p-6 sm:p-7 rounded-2xl bg-white border border-amber-100 shadow-xs">
+          <h3 class="text-lg font-bold text-slate-900">Digital Marketing</h3>
+          <p class="text-xs text-slate-500 mb-4">Paid traffic &amp; conversion funnels</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-amber-50 text-amber-900 border border-amber-200">Facebook Ads Marketing</span>
+            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-amber-50 text-amber-900 border border-amber-200">TikTok Marketing</span>
+            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-amber-50 text-amber-900 border border-amber-200">Targeting &amp; Creatives</span>
+          </div>
+        </div>
+
+        <!-- Currently Learning -->
+        <div class="p-6 sm:p-7 rounded-2xl bg-white border border-violet-100 shadow-xs">
+          <div class="flex items-center justify-between mb-1">
+            <h3 class="text-lg font-bold text-slate-900">Currently Learning</h3>
+            <span class="text-[11px] font-semibold text-violet-700 bg-violet-50 px-2 py-0.5 rounded-full border border-violet-200">Expanding</span>
+          </div>
+          <p class="text-xs text-slate-500 mb-4">Engineering horizons &amp; full stack</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-violet-50 text-violet-900 border border-violet-200">Backend Development</span>
+            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-violet-50 text-violet-900 border border-violet-200">Advanced Robotics Programming</span>
+            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-violet-50 text-violet-900 border border-violet-200">Sensors &amp; Microcontrollers</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Professional Certifications Grid -->
+      <div class="mt-10">
+        <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>Professional Certifications</span>
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="p-6 rounded-2xl bg-white border border-indigo-100 shadow-xs">
+            <div class="flex items-center justify-between mb-2">
+              <h4 class="text-base font-bold text-slate-900">Generative AI in Practice</h4>
+              <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200">Certified</span>
+            </div>
+            <p class="text-xs text-slate-500 mb-2 font-medium">Professional Certification</p>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Applied LLM implementation, agentic workflows, API integration, and generative AI deployment.
+            </p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-indigo-100 shadow-xs">
+            <div class="flex items-center justify-between mb-2">
+              <h4 class="text-base font-bold text-slate-900">Prompt Engineering</h4>
+              <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-indigo-50 text-indigo-800 border border-indigo-200">Specialist</span>
+            </div>
+            <p class="text-xs text-slate-500 mb-2 font-medium">Specialist Certification</p>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Advanced contextual prompting, few-shot conditioning, structured output generation, and optimization.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LANGUAGES SECTION ================= -->
+  <section id="languages" class="py-20 bg-white border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mx-auto text-center mb-14">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Languages</h2>
+        <p class="mt-3 text-slate-600 text-base sm:text-lg">Language proficiency for regional and global collaboration.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Urdu -->
+        <div class="p-6 rounded-2xl bg-gray-50/80 border border-gray-200/80">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-2xl font-bold text-slate-900">Urdu (اردو)</span>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200">Native</span>
+          </div>
+          <p class="text-sm font-semibold text-indigo-600 mb-2">Native / Fluent</p>
+          <p class="text-xs text-slate-600">Primary native language; fluent in verbal and formal written communication.</p>
+          <div class="mt-4 w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+            <div class="w-full h-full bg-emerald-500"></div>
+          </div>
+        </div>
+
+        <!-- Punjabi -->
+        <div class="p-6 rounded-2xl bg-gray-50/80 border border-gray-200/80">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-2xl font-bold text-slate-900">Punjabi (پنجابی)</span>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200">Native</span>
+          </div>
+          <p class="text-sm font-semibold text-indigo-600 mb-2">Native / Fluent</p>
+          <p class="text-xs text-slate-600">Fluent regional native tongue with complete conversational mastery.</p>
+          <div class="mt-4 w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+            <div class="w-full h-full bg-emerald-500"></div>
+          </div>
+        </div>
+
+        <!-- English -->
+        <div class="p-6 rounded-2xl bg-gray-50/80 border border-gray-200/80">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-2xl font-bold text-slate-900">English</span>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-indigo-50 text-indigo-800 border border-indigo-200">Learning</span>
+          </div>
+          <p class="text-sm font-semibold text-indigo-600 mb-2">Conversational</p>
+          <p class="text-xs text-slate-600">Conversational proficiency; actively learning and improving for international projects.</p>
+          <div class="mt-4 w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+            <div class="w-[70%] h-full bg-indigo-500"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURED PROJECTS ================= -->
+  <section id="projects" class="py-20 bg-gray-50/70 border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mx-auto text-center mb-14">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Featured Projects</h2>
+        <p class="mt-3 text-slate-600 text-base sm:text-lg">Real-world client websites, assignment prototypes, and interactive tools.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- 1. Gill Farm Official -->
+        <div class="rounded-2xl bg-white border border-gray-200 shadow-xs overflow-hidden flex flex-col justify-between">
+          <div class="p-6 bg-gradient-to-r from-emerald-600 to-teal-700 text-white">
+            <span class="text-xs font-semibold uppercase tracking-wider text-emerald-100">Commercial Agriculture</span>
+            <h3 class="text-2xl font-bold mt-1">Gill Farm Official</h3>
+          </div>
+          <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Official farm website built, deployed on Vercel, and successfully indexed on Google Search for organic discoverability.
+            </p>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 text-slate-700">Vercel</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 text-slate-700">SEO / Google Indexing</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 text-slate-700">Web Design</span>
+            </div>
+            <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
+              <a href="https://gill-farm-offical.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-slate-900 hover:bg-indigo-600 rounded-xl transition-colors">
+                <span>View Live Demo</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </a>
+              <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200">
+                Live on Vercel
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Hamza BBQ -->
+        <div class="rounded-2xl bg-white border border-gray-200 shadow-xs overflow-hidden flex flex-col justify-between">
+          <div class="p-6 bg-gradient-to-r from-amber-600 to-orange-700 text-white">
+            <span class="text-xs font-semibold uppercase tracking-wider text-amber-100">Restaurant Client</span>
+            <h3 class="text-2xl font-bold mt-1">Hamza BBQ (Restaurant Website)</h3>
+          </div>
+          <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Responsive frontend website created for a food business / restaurant client with interactive menus and promotional layouts.
+            </p>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 text-slate-700">Netlify</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 text-slate-700">Interactive Menus</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 text-slate-700">Responsive Design</span>
+            </div>
+            <div class="pt-4 border-t border-gray-100">
+              <a href="https://69fe5d60afd562c8d5c2b548--gleaming-biscotti-d3a1d5.netlify.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-slate-900 hover:bg-indigo-600 rounded-xl transition-colors">
+                <span>View Live Demo</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. StepZone -->
+        <div class="rounded-2xl bg-white border border-gray-200 shadow-xs overflow-hidden flex flex-col justify-between">
+          <div class="p-6 bg-gradient-to-r from-blue-600 to-indigo-800 text-white">
+            <span class="text-xs font-semibold uppercase tracking-wider text-blue-100">E-Commerce Concept</span>
+            <h3 class="text-2xl font-bold mt-1">StepZone (Sneaker E-Commerce Concept)</h3>
+          </div>
+          <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Clean and stylish footwear storefront frontend designed for a university assignment project.
+            </p>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 text-slate-700">Netlify</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 text-slate-700">E-Commerce UI</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 text-slate-700">Assignment Project</span>
+            </div>
+            <div class="pt-4 border-t border-gray-100">
+              <a href="https://6a59f6f07d2e4e26282a6779--sparkly-frangollo-c5ef64.netlify.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-slate-900 hover:bg-indigo-600 rounded-xl transition-colors">
+                <span>View Live Demo</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. AI Assistant / Chatbot App -->
+        <div class="rounded-2xl bg-white border border-gray-200 shadow-xs overflow-hidden flex flex-col justify-between">
+          <div class="p-6 bg-gradient-to-r from-violet-600 to-purple-800 text-white">
+            <span class="text-xs font-semibold uppercase tracking-wider text-purple-100">AI Web Interface</span>
+            <h3 class="text-2xl font-bold mt-1">AI Assistant / Chatbot App</h3>
+          </div>
+          <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Interactive temporary AI chatbot application web interface with responsive message handling.
+            </p>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 text-slate-700">Netlify</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 text-slate-700">AI Chatbot UI</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 text-slate-700">Interactive</span>
+            </div>
+            <div class="pt-4 border-t border-gray-100">
+              <a href="https://6a2ea136f09b32fc022691a6--frolicking-mooncake-00814a.netlify.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-slate-900 hover:bg-indigo-600 rounded-xl transition-colors">
+                <span>View Live Demo</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DEDICATED CV & CREDENTIALS SECTION ================= -->
+  <section id="cv" class="py-20 bg-gray-50 border-b border-gray-200/80">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="max-w-3xl mx-auto text-center mb-10">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-indigo-50 text-indigo-700 text-xs font-semibold tracking-wide uppercase mb-3">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+          <span>Curriculum Vitae / Resume</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          Professional CV &amp; Credentials
+        </h2>
+        <p class="mt-3 text-slate-600 text-base sm:text-lg leading-relaxed">
+          Review my official resume, educational background, and technical certifications directly in the browser or download a copy for offline evaluation.
+        </p>
+      </div>
+
+      <!-- CV Actions Bar -->
+      <div class="bg-white p-4 sm:p-6 rounded-2xl border border-gray-200 shadow-xs mb-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center shrink-0">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+          </div>
+          <div>
+            <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
+              <span>muhammad_kashan_munawar_CV.pdf</span>
+              <span class="text-[11px] font-medium px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
+                Ready to View / Download
+              </span>
+            </h3>
+            <p class="text-xs text-slate-500">
+              Mapped to local folder: <code class="text-indigo-600 font-mono">files/muhammad_kashan_munawar_CV.pdf</code>
+            </p>
+          </div>
+        </div>
+
+        <!-- Action Buttons: View CV & Download CV -->
+        <div class="flex flex-wrap items-center gap-3 w-full sm:w-auto">
+          <!-- View CV Button (opens in new tab) -->
+          <a
+            id="cv-view-btn"
+            href="files/muhammad_kashan_munawar_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-800 bg-gray-100 hover:bg-gray-200 transition-colors shadow-xs"
+          >
+            <svg class="w-4 h-4 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+            <span>View CV</span>
+            <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+
+          <!-- Download CV Button (with download attribute) -->
+          <a
+            id="cv-download-btn"
+            href="files/muhammad_kashan_munawar_CV.pdf"
+            download="muhammad_kashan_munawar_CV.pdf"
+            class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white bg-slate-900 hover:bg-indigo-600 transition-colors shadow-xs"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+            <span>Download CV</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Embedded PDF Preview Option as requested -->
+      <div class="bg-white p-4 sm:p-6 rounded-2xl border border-gray-200 shadow-sm">
+        <div class="flex items-center justify-between pb-4 mb-4 border-b border-gray-100">
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 rounded-full bg-rose-400"></span>
+            <span class="w-3 h-3 rounded-full bg-amber-400"></span>
+            <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+            <span class="text-xs font-medium text-slate-500 ml-2">PDF Document Viewer &bull; files/muhammad_kashan_munawar_CV.pdf</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <a
+              href="files/muhammad_kashan_munawar_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-xs font-semibold text-indigo-600 hover:text-indigo-700 inline-flex items-center gap-1"
+            >
+              <span>Open Fullscreen</span>
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Embedded PDF Object Tag as specified in USER_REQUEST -->
+        <div class="w-full bg-gray-100 rounded-xl overflow-hidden shadow-inner">
+          <object data="files/muhammad_kashan_munawar_CV.pdf" type="application/pdf" width="100%" height="600px" class="w-full h-[600px] rounded-xl border border-gray-200">
+            <!-- Fallback if PDF embedding is not supported in the user's browser -->
+            <div class="p-12 text-center flex flex-col items-center justify-center space-y-4 bg-gray-50 h-[600px]">
+              <div class="w-16 h-16 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+              </div>
+              <div>
+                <h4 class="text-base font-bold text-slate-900">Embedded PDF Preview</h4>
+                <p class="text-xs text-slate-500 mt-1 max-w-md">
+                  If your browser doesn't automatically display PDF documents within this frame, you can view or download the file directly:
+                </p>
+              </div>
+              <div class="flex items-center gap-3 pt-2">
+                <a
+                  href="files/muhammad_kashan_munawar_CV.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 transition-colors shadow-xs"
+                >
+                  <span>View CV in New Tab</span>
+                </a>
+                <a
+                  href="files/muhammad_kashan_munawar_CV.pdf"
+                  download="muhammad_kashan_munawar_CV.pdf"
+                  class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-700 bg-white hover:bg-gray-100 border border-gray-200 transition-colors shadow-xs"
+                >
+                  <span>Download CV</span>
+                </a>
+              </div>
+            </div>
+          </object>
+        </div>
+
+        <div class="mt-4 flex flex-wrap items-center justify-between text-xs text-slate-500 pt-3 border-t border-gray-100">
+          <div class="flex items-center gap-2">
+            <svg class="w-3.5 h-3.5 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <span>Verified PDF document: BS Robotics &bull; Web Developer &bull; AI Solutions Engineer</span>
+          </div>
+          <span>File size: ~1.2 MB &bull; PDF Format</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= CONTACT US SECTION ================= -->
+  <section id="contact" class="py-20 bg-white border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mx-auto text-center mb-14">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Contact Us</h2>
+        <p class="mt-3 text-slate-600 text-base sm:text-lg">Let's discuss your next project, e-commerce store, or development role.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+        <!-- Direct channels & info -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="p-6 rounded-2xl bg-gray-50/80 border border-gray-200/80 space-y-4">
+            <h3 class="text-lg font-bold text-slate-900">Direct Contact Channels</h3>
+
+            <!-- Email -->
+            <div class="p-4 rounded-xl bg-white border border-gray-200/80 shadow-2xs flex items-center justify-between">
+              <div>
+                <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Email</p>
+                <a href="mailto:kashangillmuhammad@gmail.com" class="text-sm font-bold text-slate-900 hover:text-indigo-600">kashangillmuhammad@gmail.com</a>
+              </div>
+            </div>
+
+            <!-- Phone / WhatsApp -->
+            <div class="p-4 rounded-xl bg-white border border-gray-200/80 shadow-2xs flex items-center justify-between">
+              <div>
+                <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Phone / WhatsApp</p>
+                <a href="https://wa.me/923004812972" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-slate-900 hover:text-emerald-600">+923004812972</a>
+              </div>
+              <a href="https://wa.me/923004812972" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-50 text-emerald-700 hover:bg-emerald-100">WhatsApp</a>
+            </div>
+
+            <!-- Location Note -->
+            <div class="p-4 rounded-xl bg-white border border-gray-200/80 shadow-2xs">
+              <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Location</p>
+              <p class="text-sm font-bold text-slate-900">Based in Lahore / Khanewal, Pakistan</p>
+            </div>
+          </div>
+
+          <!-- Social Profiles -->
+          <div class="p-5 rounded-2xl bg-white border border-gray-200/80 shadow-xs flex items-center justify-between">
+            <span class="text-xs font-bold text-slate-600 uppercase tracking-wider">Social Links</span>
+            <div class="flex items-center gap-2">
+              <a href="https://www.linkedin.com/in/muhammadkashan972/" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-gray-100 hover:bg-indigo-50 hover:text-indigo-600">LinkedIn</a>
+              <a href="https://github.com/muhammadkashan972" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-gray-100 hover:bg-gray-200 text-slate-800">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="lg:col-span-7">
+          <div class="p-6 sm:p-8 rounded-2xl bg-white border border-gray-200/90 shadow-sm">
+            <h3 class="text-xl font-bold text-slate-900 mb-1">Send a Message</h3>
+            <p class="text-xs text-slate-500 mb-6">Fill out the details below to reach out directly.</p>
+
+            <form
+              id="standalone-contact-form"
+              action="https://formspree.io/f/xkjndleo"
+              method="POST"
+              class="space-y-4"
+              onsubmit="handleFormSubmit(event)"
+            >
+              <input type="hidden" name="_subject" value="New Submission from Portfolio Website">
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Name *</label>
+                  <input type="text" name="name" id="input-name" required placeholder="John Doe" class="w-full px-3.5 py-2.5 rounded-xl border border-gray-300 text-sm focus:ring-2 focus:ring-indigo-500 focus:outline-none" />
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Email *</label>
+                  <input type="email" name="email" id="input-email" required placeholder="john@example.com" class="w-full px-3.5 py-2.5 rounded-xl border border-gray-300 text-sm focus:ring-2 focus:ring-indigo-500 focus:outline-none" />
+                </div>
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Subject</label>
+                <input type="text" name="subject" id="input-subject" placeholder="Website Development / E-Commerce" class="w-full px-3.5 py-2.5 rounded-xl border border-gray-300 text-sm focus:ring-2 focus:ring-indigo-500 focus:outline-none" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Message *</label>
+                <textarea name="message" id="input-message" rows="5" required placeholder="Hi Kashan, I'd like to talk about..." class="w-full px-3.5 py-2.5 rounded-xl border border-gray-300 text-sm focus:ring-2 focus:ring-indigo-500 focus:outline-none resize-none"></textarea>
+              </div>
+              <button id="standalone-submit-btn" type="submit" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-slate-900 hover:bg-indigo-600 text-white text-sm font-semibold transition-colors">
+                Send Message
+              </button>
+              <div id="form-feedback" class="hidden p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-medium">
+                Thank you! Your message has been sent successfully.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-slate-900 text-slate-400 py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pb-8 border-b border-slate-800">
+        <div class="text-left">
+          <p class="text-lg font-bold text-white">Muhammad Kashan Munawar</p>
+          <p class="text-xs text-slate-400">Web Developer &amp; AI Solutions Engineer &bull; Superior University, Lahore</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="https://www.linkedin.com/in/muhammadkashan972/" target="_blank" rel="noopener noreferrer" class="text-xs text-slate-300 hover:text-white">LinkedIn</a>
+          <span>&bull;</span>
+          <a href="https://github.com/muhammadkashan972" target="_blank" rel="noopener noreferrer" class="text-xs text-slate-300 hover:text-white">GitHub</a>
+          <span>&bull;</span>
+          <a href="files/muhammad_kashan_munawar_CV.pdf" target="_blank" rel="noopener noreferrer" class="text-xs text-indigo-400 hover:text-indigo-300 font-semibold">Download CV (PDF)</a>
+        </div>
+      </div>
+      <p class="text-xs text-slate-500">
+        &copy; 2026 Muhammad Kashan Munawar. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Script for Mobile Menu & Smooth Form Handling -->
+  <script>
+    const toggleBtn = document.getElementById('mobile-toggle-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    toggleBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    document.querySelectorAll('.mobile-nav-item').forEach(item => {
+      item.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+    });
+
+    async function handleFormSubmit(e) {
+      e.preventDefault();
+      const form = document.getElementById('standalone-contact-form');
+      const action = form.getAttribute('action');
+      const feedback = document.getElementById('form-feedback');
+      const submitBtn = document.getElementById('standalone-submit-btn');
+
+      const name = document.getElementById('input-name').value;
+      const email = document.getElementById('input-email').value;
+      const subject = document.getElementById('input-subject').value || 'Portfolio Inquiry';
+      const message = document.getElementById('input-message').value;
+
+      // If Formspree endpoint is configured with a real ID
+      if (action && !action.includes('YOUR_FORMSPREE_FORM_ID')) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+        try {
+          const res = await fetch(action, {
+            method: 'POST',
+            headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              _subject: 'New Submission from Portfolio Website',
+              name: name,
+              email: email,
+              subject: subject,
+              message: message
+            })
+          });
+          if (res.ok) {
+            feedback.textContent = 'Thank you! Your message has been sent successfully via Formspree.';
+            feedback.className = 'p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-medium block';
+            form.reset();
+          } else {
+            throw new Error('Submission failed');
+          }
+        } catch (err) {
+          feedback.textContent = 'Message captured! Click below to send directly via your email client.';
+          feedback.className = 'p-4 rounded-xl bg-amber-50 border border-amber-200 text-amber-800 text-xs font-medium block';
+          window.location.href = `mailto:kashangillmuhammad@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('From: ' + name + ' (' + email + ')\n\n' + message)}`;
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Send Message';
+        }
+        return;
+      }
+
+      // Default behavior when YOUR_FORMSPREE_FORM_ID placeholder is present
+      feedback.classList.remove('hidden');
+      const mailtoUrl = `mailto:kashangillmuhammad@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('From: ' + name + ' (' + email + ')\n\n' + message)}`;
+      window.location.href = mailtoUrl;
+    }
+  </script>
+</body>
+</html>
